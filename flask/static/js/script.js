@@ -7,7 +7,7 @@
     hour = minute * 60,
     day = hour * 24;
     
-  deadline = "Jun 25, 2024 20:00:00"
+  deadline = "Jun 27, 2024 14:00:00"
 
   const countDown = new Date(deadline).getTime(),
     x = setInterval(function () {
