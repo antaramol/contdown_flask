@@ -4,6 +4,8 @@ services:
       restart: always
       ports: 
         - '8000:8000'
+      environment:
+        - FINAL_DATE=Jun 27, 2024 14:00:00 (ECT)
       healthcheck:
         test: ["CMD-SHELL", "curl --silent --fail localhost:8000/flask-health-check || exit 1"]
         interval: 10s
